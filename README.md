@@ -1,6 +1,6 @@
 This **Todo App** is built using **React** and **TypeScript**, providing seamless task management with real-time API interactions. The application loads todos from an API, displaying them dynamically while ensuring error handling through user-friendly notifications that disappear automatically after a delay. Users can filter tasks by status, add new todos with validation, delete single or multiple completed todos, and toggle their completion status. The app also supports bulk status toggling while optimizing API calls. Editing functionality allows renaming todos via double-click, automatically saving changes on blur or Enter key press, and canceling edits with the Escape key. The UI ensures a smooth experience by implementing loading indicators, disabled controls during API requests, and focus management, preventing duplicate actions and enhancing usability.
 
-[DEMO_LINK](https://rberkunova.github.io/todo-app/)
+[DEMO LINK](https://rberkunova.github.io/todo-app/)
 
 ## How to Run the Project Locally
 
