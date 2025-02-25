@@ -48,18 +48,18 @@ export const App: React.FC = () => {
     }
   }, []);
 
-  // Автоматичне ховання помилки через 3 секунди
   useEffect(() => {
-    if (error) {
-      const timer = setTimeout(() => {
-        setError(null);
-      }, 3000);
-
-      return () => clearTimeout(timer);
+    if (!error) {
+      return;
     }
+
+    const timer = setTimeout(() => {
+      setError(null);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, [error]);
 
-  // Фільтрування для виведення у <TodoList />
   const filteredTodos = todos.filter(todo => {
     if (filter === FilterState.Active) {
       return !todo.completed;
